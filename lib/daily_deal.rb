@@ -29,7 +29,7 @@ module DailyDeal
 
           xml.item do
             xml.title result.title
-            xml.description result.description
+            xml.description "<p><img src='#{result.cover_image}'/></p>#{result.description}"
             xml.link deal_link
             xml.pubDate DateTime.now.rfc822
             xml.guid Guid.new.to_s, :isPermaLink => false
