@@ -1,10 +1,10 @@
 require File.expand_path(File.join(File.dirname(__FILE__), 'spec_helper'))
 
 module DailyDeal
-  describe PageParser do
+  describe "parse" do
     before(:each) do
       contents = File.read(File.join(File.dirname(__FILE__), 'resources', 'unite_the_tribes.html'))
-      @result = PageParser.parse(contents)
+      @result = DailyDeal.parse(contents)
     end
 
     it "should get the title" do
