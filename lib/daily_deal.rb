@@ -25,7 +25,7 @@ module DailyDeal
           xml.description "Apress Deal of the Day"
           deal_link = "http://www.apress.com/info/dailydeal"
           xml.link deal_link
-          xml.tag! "atom:link", :rel => "self", :href => "http://www.patmaddox.com/apress_daily_deal"
+          xml.tag! "atom:link", :rel => "self", :href => "http://www.patmaddox.com/apress_daily_deal.rss"
 
           xml.item do
             xml.title result.title
